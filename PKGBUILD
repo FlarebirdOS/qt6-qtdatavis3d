@@ -1,6 +1,6 @@
 pkgname=qt6-qtdatavis3d
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Qt6 Data Visualization module"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -22,7 +22,7 @@ makedepends=(
     'qt6-qtdeclarative'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(714638046803267af18cd2a4da636e5d8137e09b484210f0ebd6f0c3ebed4105)
+sha256sums=(86a49970511c2cb2d54ac820d7e13b04ca7b40d23fc3cf90542fbeba3ae36457)
 
 build() {
     cd ${pkgname#*-}
